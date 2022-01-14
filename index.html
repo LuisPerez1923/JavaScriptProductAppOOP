@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prodict App</title>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Navegación -->
+        <nav class="navbar navbar-light bg-light">
+            <a href="/" class="navbar-brand">
+                Product app
+            </a>
+        </nav>
+
+        <div class="container">
+            <!-- Aplicación -->
+            <div id="app" class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Agrega un producto</h4>
+                        </div>
+                        <form id="product-form" class="card-body">
+                            <div class="form-group mb-3">
+                                <input type="text" id="name" placeholder="Nombre del producto" class="form-control">
+                            </div>
+
+                            <div class="form-group my-3">
+                                <input type="number" id="price" step="0.01" min="0.01" placeholder="Precio del producto" class="form-control">
+                            </div>
+
+                            <div class="form-group my-3">
+                                <input type="number" id="year" placeholder="Año del producto" min="1950" class="form-control" value="2010" max="2022">
+                            </div>
+
+                            <input type="submit" value="Guardar" class="btn btn-primary w-100">
+                        </form>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div id="product-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
